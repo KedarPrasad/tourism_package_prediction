@@ -29,7 +29,7 @@ numberoftrips = st.number_input("Number of Trips Annually", min_value=0, max_val
 passport = st.selectbox("Passport", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
 owncar = st.selectbox("Own Car", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
 numberofchildrenvisiting = st.number_input("Number of Children Visiting", min_value=0, max_value=10, value=0)
-designation = st.text_input("Designation", ["Manager","Executive","Senior Manager","AVP","VP"]) 
+designation = st.selectbox("Designation", ["Manager","Executive","Senior Manager","AVP","VP"]) 
 monthlyincome = st.number_input("Monthly Income", min_value=0, value=20000)
 
 
